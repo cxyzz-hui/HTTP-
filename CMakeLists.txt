@@ -7,25 +7,38 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 添加所有必需的源文件
 set(SOURCE_FILES
-    src/main.cpp
-    src/Server.cpp
-    src/Connection.cpp
-    src/EventLoop.cpp
-    src/Channel.cpp
-    src/Epoll.cpp
-    src/Socket.cpp
-    src/InetAddr.cpp
-    src/Acceptor.cpp
+    src/Event/Epoll.cpp
+    src/Event/Channel.cpp
+    src/Event/EventLoop.cpp
+    src/Http/HttpServer.cpp
+    src/Http/HttpContext.cpp
+    src/Http/HttpRequest.cpp
+    src/Http/HttpResponse.cpp
+    src/Log/Logger.cpp
+    src/Log/LogFile.cpp
+    src/Log/LogStream.cpp
+    src/Log/AppendFile.cpp
+    src/Log/FixedBuffer.cpp
+    src/Log/AsyncLogger.cpp
+    src/Pool/EventPool/EventLoopThread.cpp
+    src/Pool/EventPool/EventLoopThreadPool.cpp
+    src/Pool/Thread/ThreadPool.cpp
+    src/Pool/Thread/CurrentThread.cpp
+    src/Socket/Server.cpp
+    src/Socket/Socket.cpp
+    src/Socket/Acceptor.cpp
+    src/Socket/InetAddr.cpp
+    src/Socket/Connection.cpp
+    src/Time/Timer.cpp
+    src/Time/Timestamp.cpp
+    src/Time/TimerQueue.cpp
+    src/Util/util.cpp
     src/Buffer.cpp
-    src/util.cpp          # 新增：工具函数
-    src/ThreadPool.cpp
-    src/EventLoopThread.cpp
-    src/EventLoopThreadPool.cpp
-    src/EventLoop.cpp
+    main.cpp
 )
 
 # 创建可执行文件
 add_executable(Server ${SOURCE_FILES})
 
-target_include_directories(Server PRIVATE .)
+include_directories(src)
 target_link_libraries(Server pthread)

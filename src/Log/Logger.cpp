@@ -1,7 +1,7 @@
 #include "Logger.hpp"
 #include "AsyncLogger.hpp"
-#include "../Timestamp.hpp"
-#include "../CurrentThread.hpp"
+#include "../Time/Timestamp.hpp"
+#include "../Pool/Thread/CurrentThread.hpp"
 
 #include <thread>
 #include <memory>

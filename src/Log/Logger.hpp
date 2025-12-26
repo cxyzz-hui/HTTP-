@@ -3,7 +3,7 @@
 #define LOGGER_HPP
 
 #include "LogStream.hpp"
-#include "../Timestamp.hpp"
+#include "../Time/Timestamp.hpp"
 
 //这个类负责生产日志
 class Logger

@@ -1,5 +1,5 @@
 #include "LogFile.hpp"
-#include "../util.hpp"
+#include "../Util/util.hpp"
 #include <string>
 
 /*LogFile::LogFile(const std::string FileName_ , int Flush_count_)

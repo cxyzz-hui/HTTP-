@@ -1,5 +1,6 @@
 #pragma
 #ifndef CALLBACKS_HPP
+#define CALLBACKS_HPP
 
 //这里我们要给其他类型的智能指针和回调函数取别名，以便我们后期好分辨
 #include <functional>

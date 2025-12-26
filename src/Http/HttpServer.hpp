@@ -2,7 +2,8 @@
 #ifndef HTTPSERVER_HPP
 #define HTTPSERVER_HPP
 
-#include "../Server.hpp"
+//#include "../Server.hpp"
+#include "../Socket/Server.hpp"
 #include <functional>
 
 class HttpRequest;

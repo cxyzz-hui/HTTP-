@@ -1,3 +1,0 @@
-/home/zz/study/reactor/two/Server/build/CMakeFiles/rebuild_cache.dir
-/home/zz/study/reactor/two/Server/build/CMakeFiles/Server.dir
-/home/zz/study/reactor/two/Server/build/CMakeFiles/edit_cache.dir
